@@ -1,0 +1,53 @@
+.search {
+    width: 400px;
+    margin: 2rem auto 2.5rem;
+    border-radius: 5px;
+}
+
+form {
+    height: 2.9rem;
+    background-color: #0d0d0d23;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 75% 25%;
+    box-shadow: 0px 0px 5px #0d0d0d23;
+    border-radius: 5px;
+}
+form input, form button {
+    border: none;
+    outline: none;
+}
+form input {
+    padding-left: 8px;
+    background-color: rgba(255, 255, 255, 0.383);
+}
+form button {
+    font-size: 16px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form button:hover {
+    cursor: pointer;
+    background-color: #0d0d0d23;
+    border-radius: 5px;
+}
+
+.results {
+    width: 90%;
+    margin: 0 auto 5rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 2.5rem;
+    justify-content: space-between;
+}
+.results app-housing-location {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 1rem;
+    box-shadow: 0px 0px 5px #0d0d0d23;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.results app-housing-location:hover {
+    background-color: #c8c8c823;
+}
