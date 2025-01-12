@@ -35,7 +35,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
 
             <label for="email">Email</label>
             <input type="text" id="email" formControlName="email">
-            <!-- <button type="submit" class="primary">Apply now</button> -->
+            <button type="submit" class="primary">Apply now</button>
           </form>
         </app-form-modal>
       </section>
@@ -58,9 +58,7 @@ export class DetailsComponent {
 
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.housingService.getHousingLocationById(housingLocationId).then(housingLocation => {
-      this.housingLocation = housingLocation
-    });
+    this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
   }
 
   submitApplication() {

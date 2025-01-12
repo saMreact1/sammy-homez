@@ -6,7 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     <div class="modal" [class.show]="isVisible">
       <div class="modal-content">
         <ng-content></ng-content>
-        <button (click)="close()">Apply now</button>
       </div>
     </div>
   `,
